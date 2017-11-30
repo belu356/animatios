@@ -1,0 +1,50 @@
+#primary-navigation {
+    background:#000;
+    color:#fff;
+    display:inline-block;
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:9999;
+}
+#primary-navigation a {
+    color:#fff;
+    padding:15px 10px;
+    display:block;
+}
+#secondary-navigation {
+    position:fixed;
+    top:50px;
+	right:0px;
+    width:200px;
+    height:500px;
+	background:#000;
+    color:#fff;
+    transition:all 0.4s ease-out;
+    transform:translateX(200px);
+}
+#secondary-navigation.opened {
+    transform:translateX(0px);
+	transition:all 0.4s ease-out;
+}
+body{
+    perspective: 600px;
+    perspective-origin: 100% 50%;
+}
+#main {
+    background:#f33;
+    width:100%;
+    height:500px;
+     transition:all 0.4s ease-out;
+}
+.animate {
+    transition:all 0.4s ease-out;
+    transform: rotateY(-15deg) translate(27px, 80px);
+}
+.slide-left {
+    transform:translateX(-200px);
+}
+
+
+//https://bootsnipp.com/snippets/z4P7r
+

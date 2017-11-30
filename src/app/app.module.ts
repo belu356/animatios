@@ -8,6 +8,7 @@ import { AvionComponent } from './avion/avion.component';
 import { BarraComponent } from './barra/barra.component';
 import { KeyframesComponent } from './keyframes/keyframes.component';
 import { LoadingComponent } from './loading/loading.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { LoadingComponent } from './loading/loading.component';
     AvionComponent,
     BarraComponent,
     KeyframesComponent,
-    LoadingComponent
+    LoadingComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
