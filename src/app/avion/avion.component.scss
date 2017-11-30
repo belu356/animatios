@@ -1,0 +1,26 @@
+@keyframes fly{
+    60%{
+      top: 0;
+      transform: scale(0.6) rotate(5deg);
+    }
+    to{
+      top: 50px;
+      left: 870px;
+      transform: scale(0.6) rotate(5deg);
+    }
+  }
+  body{background: rgb(110, 19, 19);}
+  img{
+    position: absolute;
+    top: 50px;
+    left: -80px;
+    transform: scale(0.6) rotate(1deg);
+    animation: fly 3s linear infinite;
+  }
+  div{
+    position: relative;
+    width: 1000px;
+    height: 100px;
+    margin-top: 60px;
+  }
+

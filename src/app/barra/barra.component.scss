@@ -1,0 +1,88 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: rgb(66, 133, 244);
+}
+
+.botonera > ul {
+	list-style-type: none;
+	max-width: 1000px;
+	margin: auto;
+	margin-top: 20px;
+	position: relative;
+}
+
+.botonera ul a {
+	background-color: #EEE;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.1em;
+	font-weight: 900;
+	width: 250px;
+	display: block;
+	float: left;
+	padding: 12px 0;
+	text-align: center;
+	color: #333;
+	text-transform: uppercase;
+	text-decoration: none;	
+	text-decoration: none;
+	box-shadow: inset 0 0 0 0px #B00;
+	filter: hue-rotate(0deg);
+	transition: filter 2s, box-shadow 0.2s;
+}
+
+
+.botonera ul a:hover{
+	color: #00B;
+	box-shadow: inset 0 0 0 4px #00B;
+	filter: hue-rotate(360deg);
+}
+.sub-menu {
+	display: none;
+	list-style-type: none;
+	position: absolute;
+	top: 49px;
+	left: 500px;
+}
+.botonera .sub-menu a{
+	text-transform: capitalize;	
+	font-weight: 400;
+}
+.botonera .sub-menu a:hover{
+	box-shadow: none;
+	background-color: #FFF;
+	color: #900;
+	filter: hue-rotate(360deg);
+}
+
+.botonera .desplegar:hover .sub-menu{
+	display: block;
+}
+.sub-menu a{
+	transform: scaleY(0);
+	transform-origin: top center;
+	animation-name: aparecer;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+.sub-menu li:nth-child(1) a{
+	animation-delay: 0;
+}
+.sub-menu li:nth-child(2) a{
+	animation-delay: 0.5s;
+}
+.sub-menu li:nth-child(3) a{
+	animation-delay: 1s;
+}
+
+@keyframes aparecer{
+	from{
+		transform: scaleY(0);
+	}
+	to{
+		transform: scaleY(1);
+	}
+}
