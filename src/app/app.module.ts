@@ -9,6 +9,9 @@ import { BarraComponent } from './barra/barra.component';
 import { KeyframesComponent } from './keyframes/keyframes.component';
 import { LoadingComponent } from './loading/loading.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { BodyComponent } from './body/body.component';
+import { FooterComponent } from './footer/footer.component';
+import { PortadaComponent } from './portada/portada.component';
 
 
 @NgModule({
@@ -18,7 +21,10 @@ import { NavbarComponent } from './navbar/navbar.component';
     BarraComponent,
     KeyframesComponent,
     LoadingComponent,
-    NavbarComponent
+    NavbarComponent,
+    BodyComponent,
+    FooterComponent,
+    PortadaComponent
   ],
   imports: [
     BrowserModule,

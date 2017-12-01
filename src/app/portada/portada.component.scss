@@ -1,0 +1,21 @@
+h4:hover{
+    color:#096880;
+    text-decoration: underline;
+}
+h4{
+    font-family: 'Slabo 27px', serif;
+}
+img:hover{
+    border-color: #096880;
+}
+
+.move:hover{
+    transform: rotate(45 deg);
+}
+.grow col-4{ 
+        transition: all .6s ease-in-out; 
+    }
+
+.grow:hover{ 
+    transform: scale(1.1);
+ }
