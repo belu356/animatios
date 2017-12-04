@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpModule} from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -12,6 +13,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortadaComponent } from './portada/portada.component';
+import { PostListComponent } from './post-list/post-list.component';
+import { PostService } from './post.service';
+import { PostComponent } from './post/post.component';
 
 
 @NgModule({
@@ -24,13 +28,18 @@ import { PortadaComponent } from './portada/portada.component';
     NavbarComponent,
     BodyComponent,
     FooterComponent,
-    PortadaComponent
+    PortadaComponent,
+    PostListComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [
+    PostService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
